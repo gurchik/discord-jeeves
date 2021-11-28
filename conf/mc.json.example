@@ -1,0 +1,5 @@
+{
+    "server": "mc.example.com",
+    "instance_id": "i-abc123",
+    "cloudflare_token": "your_token_here"
+}

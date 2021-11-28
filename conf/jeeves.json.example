@@ -1,0 +1,9 @@
+{
+    "discord_token": "your_discord_token_here",
+    "sentry_dsn": "https://abc@123.ingest.sentry.io/456 or leave blank and sentry won't be used",
+    "cogs": [
+        "yt",
+        "translate",
+        "mc"
+    ]
+}

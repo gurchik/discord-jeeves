@@ -1,0 +1,16 @@
+# core
+discord.py ~= 1.7
+pyyaml
+sentry-sdk
+
+# mc plugin
+cloudflare ~= 2.8
+mcstatus
+boto3
+
+# for voice
+PyNaCl
+youtube-dl
+
+# for translate
+requests

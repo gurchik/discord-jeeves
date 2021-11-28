@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  jeeves:
+    build: .
+    volumes:
+      - .:/app
+      - ytcache:/ytcache
+      - $HOME/.aws/credentials:/root/.aws/credentials:ro
+    # Occasionally yt-dl runs into "Address not available", I believe this is weird WSL2 DNS cache problems
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
+volumes:
+  ytcache: {}
