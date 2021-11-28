@@ -10,8 +10,9 @@ RUN apk add libopusenc
 # needed for youtube-dl
 RUN apk add ffmpeg
 
+ADD . /app/
+
 WORKDIR /app
-COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 RUN apk del .pynacl_build_deps
