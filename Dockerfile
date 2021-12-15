@@ -17,4 +17,4 @@ RUN pip install -r requirements.txt
 
 RUN apk del .pynacl_build_deps
 
-ENTRYPOINT "/app/jeeves.py"
+ENTRYPOINT "/app/start.sh"
