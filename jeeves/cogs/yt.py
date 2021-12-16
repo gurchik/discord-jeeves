@@ -1,7 +1,7 @@
 import discord
 from ..util import run_sync_func, load_conf
 from yt_dlp import YoutubeDL
-from youtube_dl.utils import DownloadError
+from yt_dlp.utils import DownloadError
 import os
 import os.path
 from discord.ext import commands, tasks
