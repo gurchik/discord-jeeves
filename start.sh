@@ -1,6 +1,8 @@
 #!/bin/ash
 
-# Ensure youtube-dl is always up-to-date when restarting pod
-pip install --upgrade youtube-dl
+# Ensure yt-dlp is always up-to-date when restarting pod
+echo "Upgrading yt-dlp"
+pip install --upgrade yt-dlp
 
+echo "Starting jeeves"
 ./jeeves.py

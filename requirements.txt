@@ -10,7 +10,8 @@ boto3
 
 # for voice
 PyNaCl
-youtube-dl
+#youtube-dl
+yt-dlp
 
 # for translate
 requests

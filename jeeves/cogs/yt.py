@@ -1,6 +1,6 @@
 import discord
 from ..util import run_sync_func, load_conf
-import youtube_dl
+from yt_dlp import YoutubeDL
 from youtube_dl.utils import DownloadError
 import os
 import os.path
@@ -72,7 +72,7 @@ class Cog(commands.Cog):
             "https:\/\/(www.)?youtube.com\/watch\?v=([\w-]+)"
         )
 
-        self.ytdl = youtube_dl.YoutubeDL(ytdl_options)
+        self.ytdl = YoutubeDL(ytdl_options)
 
         self.cleanup_queues.start()
         self.disconnect_from_empty_vcs.start()
